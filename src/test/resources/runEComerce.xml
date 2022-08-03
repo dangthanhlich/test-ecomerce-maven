@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce - User" parallel="method" thread-count="3">
+
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportConfig.ExtentTestListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <parameter name="urlUser" value="https://www.amazon.com/" />
+
+    <test name="Run on CHROME">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.ecommerce.user.TC_01_Search"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
