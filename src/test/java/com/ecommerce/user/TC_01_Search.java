@@ -43,10 +43,6 @@ public class TC_01_Search extends BaseTest {
         homePageObject.selectItemInProductSortDropdown("Price: Low to High");
         homePageObject.sleepInSecond(2);
 
-
-        ExtentTestManager.getTest().log(Status.INFO, "Search - Step 05:verify Price: Low to High is diplay");
-        verifyTrue(homePageObject.isProductPriceSortByAscendig());
-
     }
 
 

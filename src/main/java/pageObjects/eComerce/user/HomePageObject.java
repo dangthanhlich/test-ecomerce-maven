@@ -40,27 +40,4 @@ public class HomePageObject extends BasePage {
         clickToElement(driver, HomePageUI.FEATURED_DROPDOWN_ITEM, textItem);
     }
 
-    public boolean isProductPriceSortByAscendig() {
-        ArrayList<Float> productUIList = new ArrayList<Float>();
-
-        List<WebElement> productPriceText = getListWebElement(driver, HomePageUI.PRODUCT_PRICE_TEXT);
-
-        for (WebElement productPrice : productPriceText) {
-
-            productUIList.add(Float.parseFloat(productPrice.getText().replace("$", ",").replace(",", "")));
-            System.out.print("Product name  on UI:" + productPrice.getText() + "\n");
-        }
-
-        ArrayList<Float> productSortList = new ArrayList<Float>();
-        for (Float product : productUIList) {
-            productSortList.add(product);
-        }
-
-        Collections.sort(productSortList);
-        for (Float productName : productSortList) {
-            System.out.print("Product name after sort" + productName + "\n");
-        }
-
-        return productSortList.equals(productUIList);
-    }
 }
