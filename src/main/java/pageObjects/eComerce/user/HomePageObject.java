@@ -2,12 +2,7 @@ package pageObjects.eComerce.user;
 
 import commons.BasePage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import pageUIs.eComerce.user.HomePageUI;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class HomePageObject extends BasePage {
     private WebDriver driver;

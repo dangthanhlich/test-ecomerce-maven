@@ -12,7 +12,6 @@ import pageObjects.eComerce.user.PageGeneratorManager;
 import reportConfig.ExtentTestManager;
 
 import java.lang.reflect.Method;
-import java.util.Random;
 
 public class TC_01_Search extends BaseTest {
     @Parameters({ "browser", "urlUser"})

@@ -12,14 +12,14 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Compiler Code with Java 11 -->
-        <maven.compiler.target>11</maven.compiler.target>
-        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
 
         <!-- Global variable for dependencies -->
-        <webdriver.version>3.141.59</webdriver.version>
+        <webdriver.version>4.20.0</webdriver.version>
         <testng.version>6.14.3</testng.version>
         <jackson.version>2.10.0</jackson.version>
-        <webdrivermanager.version>5.0.2</webdrivermanager.version>
+        <webdrivermanager.version>5.9.2</webdrivermanager.version>
         <aspectj.version>1.9.8</aspectj.version>
         <allure.version>2.18.1</allure.version>
         <extent.version>5.0.8</extent.version>
@@ -150,6 +150,11 @@
             <artifactId>owner</artifactId>
             <version>1.0.10</version>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-opera-driver</artifactId>
+            <version>3.141.59</version>
+        </dependency>
 
     </dependencies>
 
@@ -160,11 +165,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.0</version>
-                <!-- Compiler code vs Java 11 -->
+                <version>3.13.0</version>
+                <!-- Compiler code vs Java 17 -->
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
 

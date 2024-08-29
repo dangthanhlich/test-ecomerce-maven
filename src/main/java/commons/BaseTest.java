@@ -42,9 +42,9 @@ public class BaseTest {
 		if (browserList == BrowserList.FIREFOX) {
 
 			// mất warning lúc chạy
-			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
-					GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
+//			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+//			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
+//					GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
 
 			// Add extension to Firefox
 			FirefoxProfile profile = new FirefoxProfile();
